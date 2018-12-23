@@ -36,3 +36,11 @@ sudo systemctl enable rfcomm
 
 # start the rfcomm service
 sudo systemctl restart rfcomm
+
+
+# We are done
+# To connect first do the following on the client machine:
+# ls /dev/cu.*
+# Find the one named after your pi. Assume it is called raspberrypi.
+# To connect do:
+# screen /dev/cu.raspberrypi-SerialPort 115200
